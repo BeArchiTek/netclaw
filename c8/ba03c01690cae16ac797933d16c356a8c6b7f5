@@ -1,0 +1,40 @@
+workspace/skills/infrahub-sot/SKILL.md
+  s_889098d1a55f19::t_49abd4bbfc569a 3-4,14-18,20-29,36,40-54,57,61-65,67,71-75,77,79-84,86,88-89,95,97-98,104-109,111,113,115-123,129-161,176-177,189-190,194-201,205-221
+SOUL-SKILLS.md
+  s_889098d1a55f19::t_ef997fe39ca8c6 279-283
+ui/netclaw-visual/server.js
+  s_889098d1a55f19::t_6635a8c155091d 35
+scripts/install.sh
+  s_889098d1a55f19::t_ddf0d1d7a6650a 345
+  s_889098d1a55f19::t_7d0830c6516677 369
+  s_889098d1a55f19::t_0aee3f1cd6fa36 2999
+  s_889098d1a55f19::t_400faf094de2d1 363-364,370-371,378-379
+  s_889098d1a55f19::t_92ab516b818661 377
+  s_889098d1a55f19::t_305ef628d48872 3126
+scripts/setup.sh
+  s_889098d1a55f19::t_4a179c400ad728 172-176
+README.md
+  s_889098d1a55f19::t_b8481fbcdd5783 2048
+  s_889098d1a55f19::t_5cae43fb986083 2106
+  s_889098d1a55f19::t_0c1c5fb6616839 2200
+  s_889098d1a55f19::t_6c84050ebc2f4a 2342,2347-2348
+  s_889098d1a55f19::t_5e98b601442a6a 1373-1376,1381,1384-1388
+  s_889098d1a55f19::t_37d9f5212e0443 386
+  s_889098d1a55f19::t_78cc21bdfd2a7b 503
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "c8ba03c01690cae16ac797933d16c356a8c6b7f5",
+  "prompts": {},
+  "sessions": {
+    "s_889098d1a55f19": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1320a194-74a4-42dc-961f-5700f98b8a57",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Benoit Kohler <Kohler.benoit@bearchitek.com>"
+    }
+  }
+}
