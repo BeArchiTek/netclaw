@@ -1,0 +1,23 @@
+scripts/install.sh
+  s_889098d1a55f19::t_811c3b927be7de 347-355,357,359-363,365
+  s_889098d1a55f19::t_45321fac56f45a 2622-2628,2630
+  s_889098d1a55f19::t_d194f874669c9d 340
+config/openclaw.json
+  s_889098d1a55f19::t_01ecd7427d2c3d 196-205
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "efd92afd720ce788fad997695aeae37e3476480b",
+  "prompts": {},
+  "sessions": {
+    "s_889098d1a55f19": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1320a194-74a4-42dc-961f-5700f98b8a57",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Benoit Kohler <Kohler.benoit@bearchitek.com>"
+    }
+  }
+}
