@@ -1,0 +1,28 @@
+scripts/install.sh
+  s_889098d1a55f19::t_6ab37681565c86 363-367
+  s_889098d1a55f19::t_bef3bc71edc3b3 357,360
+  s_889098d1a55f19::t_1cff90d644b9b6 2635
+README.md
+  s_889098d1a55f19::t_ab67703ba7e1a5 272
+  s_889098d1a55f19::t_6de91277bdfb80 1957
+  s_889098d1a55f19::t_62fe2ede7b4dee 2106
+  s_889098d1a55f19::t_400b8ea549a2a8 448
+workspace/skills/infrahub-sot/SKILL.md
+  s_889098d1a55f19::t_4e3c58e7c5c517 139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "96048b3bea87b3d867d6fa633e8e67b5565f7737",
+  "prompts": {},
+  "sessions": {
+    "s_889098d1a55f19": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1320a194-74a4-42dc-961f-5700f98b8a57",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Benoit Kohler <Kohler.benoit@bearchitek.com>"
+    }
+  }
+}
