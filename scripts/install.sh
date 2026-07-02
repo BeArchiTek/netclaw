@@ -354,13 +354,17 @@ if [ "$PY_MINOR" -ge 13 ]; then
         if [ -d "$INFRAHUB_MCP_DIR" ]; then
             git -C "$INFRAHUB_MCP_DIR" pull --quiet 2>/dev/null || true
         else
-            git clone https://github.com/opsmill/infrahub-mcp.git "$INFRAHUB_MCP_DIR" 2>/dev/null
+            git clone https://github.com/opsmill/infrahub-mcp.git "$INFRAHUB_MCP_DIR" 2>/dev/null || true
         fi
         if [ -d "$INFRAHUB_MCP_DIR" ] && command -v uv &> /dev/null; then
-            cd "$INFRAHUB_MCP_DIR" && uv sync 2>/dev/null; cd "$NETCLAW_DIR"
+            cd "$INFRAHUB_MCP_DIR" && uv sync 2>/dev/null || true; cd "$NETCLAW_DIR"
         fi
     }
-    log_info "Infrahub MCP installed (launched via 'uvx infrahub-mcp' — stdio transport)"
+    if command -v infrahub-mcp &> /dev/null || python3 -c "import infrahub_mcp" 2>/dev/null; then
+        log_info "Infrahub MCP installed (launched via 'uvx infrahub-mcp' — stdio transport)"
+    else
+        log_warn "Infrahub MCP not pip-installed here; will be fetched at runtime via 'uvx infrahub-mcp'"
+    fi
 else
     log_warn "Python 3.13+ required for Infrahub MCP (found 3.$PY_MINOR) — skipping"
 fi
@@ -2628,6 +2632,7 @@ elif python3 -c "import infrahub_mcp" 2>/dev/null; then
     SERVERS_OK=$((SERVERS_OK + 1))
 else
     log_warn "Infrahub MCP: NOT INSTALLED (pip3 install infrahub-mcp)"
+    SERVERS_FAIL=$((SERVERS_FAIL + 1))
 fi
 
 # Itential MCP is pip-installed, check via command or import

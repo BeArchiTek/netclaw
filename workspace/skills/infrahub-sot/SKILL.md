@@ -136,8 +136,7 @@ When building custom queries:
 
 The MCP server is for **live data** — querying and changing a running Infrahub instance. For
 **authoring the artifacts** that define and validate that data, use the OpsMill
-[**infrahub-skills**](https://github.com/opsmill/infrahub-skills) plugin (`infrahub@opsmill`, 12
-skills). Rule of thumb: **`infrahub-sot` (this skill / the MCP) reads and changes live data;
+[**infrahub-skills**](https://github.com/opsmill/infrahub-skills) plugin (`infrahub@opsmill`). Rule of thumb: **`infrahub-sot` (this skill / the MCP) reads and changes live data;
 `infrahub-skills` writes the files** (schemas, checks, transforms, generators) that shape it.
 
 | Need | Use |
